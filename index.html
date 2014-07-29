@@ -2,9 +2,9 @@
 <head>
   <script>
     function have_progress() {
-    var progress = document.getElementById('progress');
-    if (progress.value < 100)
-      progress.value = progress.value + 10;
+    var meter = document.getElementById('progress');
+    if (meter.value < 100)
+      meter.value = meter.value + 10;
     else
       alert("No more progress possible!");
     }
@@ -13,7 +13,7 @@
 
 <body>
   <h3>Hello world!</h3>
-  <progress id="progress" value="0" max="100">0 %</progress>
+  <meter id="meter" min="200" max="500" value="350">350 degrees</meter>
   <br>
   <Button onclick="have_progress()">Let there be some progress!</Button>
 </body>
