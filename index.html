@@ -1,13 +1,20 @@
 <html>
 <head>
   <script>
-    function have_progress() {alert("Will make some progress!");}
+    function have_progress() {
+    var progress = document.getElementById('progress');
+    if (progress.value <= 100)
+      progress.value = progress.value + 10;
+    else
+      alert("No more progress possible!");
+    }
   </script>
 </head>
 
 <body>
   <h3>Hello world!</h3>
   <progress value="0" max="100">0 %</progress>
+  <br>
   <Button onclick="have_progress()">Let there be some progress!</Button>
 </body>
 </html>
