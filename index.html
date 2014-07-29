@@ -3,7 +3,7 @@
   <script>
     function have_progress() {
     var meter = document.getElementById('meter');
-    if (meter.value < 100)
+    if (meter.value < meter.max)
       meter.value = meter.value + 10;
     else
       alert("No more progress possible!");
