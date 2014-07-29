@@ -8,6 +8,12 @@
     else
       alert("No more progress possible!");
     }
+    
+    function reset_progress() {
+    var meter = document.getElementById('meter');
+    meter.value = 0;
+    }
+    
   </script>
 </head>
 
@@ -16,5 +22,6 @@
   <meter id="meter" min="0" max="500" value="12">350 degrees</meter>
   <br>
   <Button onclick="have_progress()">Let there be some progress!</Button>
+  <Button onclick="reset_progress()">Start over!</Button>
 </body>
 </html>
