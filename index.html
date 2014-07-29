@@ -3,7 +3,7 @@
   <script>
     function have_progress() {
     var progress = document.getElementById('progress');
-    if (progress.value <= 100)
+    if (progress.value < 100)
       progress.value = progress.value + 10;
     else
       alert("No more progress possible!");
