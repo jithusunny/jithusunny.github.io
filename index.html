@@ -1,0 +1,27 @@
+<html>
+<head>
+  <script>
+    function have_progress() {
+    var meter = document.getElementById('meter');
+    if (meter.value < meter.max)
+      meter.value = meter.value + 10;
+    else
+      alert("No more progress possible!");
+    }
+    
+    function reset_progress() {
+    var meter = document.getElementById('meter');
+    meter.value = 0;
+    }
+    
+  </script>
+</head>
+
+<body>
+  <h3>Hello world!</h3>
+  <meter id="meter" min="0" max="500" value="12">350 degrees</meter>
+  <br>
+  <Button onclick="have_progress()">Let there be some progress!</Button>
+  <Button onclick="reset_progress()">Start over!</Button>
+</body>
+</html>
