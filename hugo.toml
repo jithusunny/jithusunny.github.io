@@ -1,0 +1,4 @@
+baseURL = 'https://zuperb.in/'
+languageCode = 'en-us'
+title = 'Zuperb'
+theme = 'ananke'
