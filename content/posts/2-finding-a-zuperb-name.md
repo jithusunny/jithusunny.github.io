@@ -1,6 +1,6 @@
 +++
 title = '#2 Finding a Zuperb Name'
-date = 2024-06-11T22:00:05+05:30
+date = 2024-06-09T17:24:05+05:30
 draft = false
 +++
 

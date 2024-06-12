@@ -6,26 +6,33 @@
     <description>Recent content in Posts on Zuperb</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Jun 2024 22:03:15 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 12 Jun 2024 23:09:37 +0530</lastBuildDate>
     <atom:link href="https://zuperb.in/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>#4 Creating A Zuperb Blog</title>
+      <link>https://zuperb.in/posts/4-creating-zuperb-blog/</link>
+      <pubDate>Wed, 12 Jun 2024 23:09:37 +0530</pubDate>
+      <guid>https://zuperb.in/posts/4-creating-zuperb-blog/</guid>
+      <description>Summary: Moving the posts from blogspot to hugo site hosted in Github pages at zuperb.in&#xA;What next? So, we have a name for this, a domain for the website.&#xA;Next, we&amp;rsquo;ll move these posts from blogspot to that web address.&#xA;Plan For that, we need to:&#xA;put these posts in a place connect the domain zuperb.in with that place of hosting The site generator - Hugo The posts need to also look like a blog.</description>
+    </item>
     <item>
       <title>#3 The Logo</title>
       <link>https://zuperb.in/posts/3-the-logo/</link>
-      <pubDate>Tue, 11 Jun 2024 22:03:15 +0530</pubDate>
+      <pubDate>Mon, 10 Jun 2024 22:36:15 +0530</pubDate>
       <guid>https://zuperb.in/posts/3-the-logo/</guid>
       <description>Pssshh: Adobe firefly generated it 😉 I love these kind of tools - amazing!&#xA;I actually wanted some meaningful logo like the YinYang, etc.&#xA;But this one is good as a version 1 logo - looks pretty pretty in my opinion. Do you like it? 👆&#xA;Tomorrow if I get time, I will move these posts to new blog at zuperb.in&#xA;That&amp;rsquo;s it for today, wishing you a great day!</description>
     </item>
     <item>
       <title>#2 Finding a Zuperb Name</title>
       <link>https://zuperb.in/posts/2-finding-a-zuperb-name/</link>
-      <pubDate>Tue, 11 Jun 2024 22:00:05 +0530</pubDate>
+      <pubDate>Sun, 09 Jun 2024 17:24:05 +0530</pubDate>
       <guid>https://zuperb.in/posts/2-finding-a-zuperb-name/</guid>
       <description>Summary: Finding a name, getting website for this project.&#xA;Intro This endeavor/project/website needs a name.&#xA;People say naming is difficult. Very true, I felt, for this project. Read Part 1 to get an idea why.&#xA;Life has infinitely many facets. A project that&amp;rsquo;s about life should also have a name like &amp;rsquo;life&#39;.&#xA;Fun exercise: try creating a word like &amp;rsquo;life&#39;.&#xA;The immediate reason why a name is required I want to put these posts/logs in some place, a website.</description>
     </item>
     <item>
       <title>#1 A New Beginning</title>
       <link>https://zuperb.in/posts/1-a-new-beginning/</link>
-      <pubDate>Tue, 11 Jun 2024 21:55:20 +0530</pubDate>
+      <pubDate>Sun, 09 Jun 2024 14:47:05 +0530</pubDate>
       <guid>https://zuperb.in/posts/1-a-new-beginning/</guid>
       <description>Summary: &amp;ldquo;Post on a new beginning in my life. Building something in public that is aimed at making life better.&amp;rdquo;&#xA;Intro (hype) This marks the beginning of a new phase in my life.&#xA;I&amp;rsquo;m going to build something in public. This is something that is coming out through me I feel, more than I creating it. This is an idea whose time has come, it looks like.&#xA;Let me search and get that proverb that says the same&amp;hellip;</description>
     </item>
