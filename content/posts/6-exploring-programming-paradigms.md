@@ -19,7 +19,7 @@ He is talking about doing things in something called 'Actor model'. Looks intere
 
 Hmm, so it is Elixir vs. Flask vs. Express now!
 
-Then I also watched 2/3 of this video - [Why Isn't Functional Programming the Norm?] (https://www.youtube.com/watch?v=QyJZzq0v7Z4). I liked FP from the little haskell, Lisp I tried.
+Then I also watched 2/3 of this video - [Why Isn't Functional Programming the Norm?](https://www.youtube.com/watch?v=QyJZzq0v7Z4). I liked FP from the little haskell, Lisp I tried.
 
 Hmm, it's late.
 
