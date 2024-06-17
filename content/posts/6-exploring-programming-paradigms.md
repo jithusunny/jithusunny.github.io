@@ -4,6 +4,8 @@ date = 2024-06-17T21:52:18+05:30
 draft = false
 +++
 
+Summary: Checking out some ideas on how to code well
+
 ## Indecision
 In the last one, I had resolved to build the backend for Zuperb in two frameworks - Flask and NestJS. After that, I was thinking Express is better than NestJS. I think I'm swinging between 'batteries-included' so that I can quickly build things vs. 'bare-bones' so that I can have more control and not carry things I don't need.
 
