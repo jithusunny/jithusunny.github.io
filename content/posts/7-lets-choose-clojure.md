@@ -54,5 +54,39 @@ Oh, and by the way, I'm coming across (and bookmarking mostly) more and more int
 
 
 
+
+
+# Baby steps in Clojure
+
+Pure functions don't change anything, have no side-effects. They just relate one set with another set, like a mathematical function. They connect some input with some output. If I give this input, I always get that output, guarantee. It doesn't also change something somewhere else, like the value of some variable.
+
+But if my accounting software doesn't 'change' the account balance when I take money from it, how can I use the software?
+
+So we'll have to make changes, have side-effects to have a tool that works.
+
+
+Every functional language deals with states, side effects in a different way, I had learnt from Russ.
+
+Skimming through the getting started section of Clojure, I'm starting to learn how Clojure deals with states, mutating states, etc. - Identity.
+
+# Identity
+Identity is "a stable logical entity associated with a series of different values over time".
+
+Wow, I heard a similar thing from Alan Watts. Something like - we are like a whirlpool, like a knot moving across a rope - a identifiable pattern(stable, logical entity) that's always changing(a series of different values over time). It's not a cat on the mat. It's a catting on the matting!
+
+Even when I thought I'll go ahead with Clojure, I wasn't fully sure if the language would have ideas at its core that I can connect with. Not saying, I'm awesome. But that I tend to like ideas that connect with the ideas around reality, nature of reality, nature of 'I', etc. 
+
+"Identities are mental tools we use to superimpose continuity on a world which is constantly, functionally, creating new values of itself."
+
+Wow. That's exactly how I these days perceive reality - how I, others, and other things exist out there.
+
+Great start!
+
+Will stop skimming and dive into this, but on another day.
+
 # Wrapping up
 That's it for today. I'm guessing I'll learn and build in Clojure little by little going forward.
+
+Thanks for watching, uhm I mean, reading. 
+
+Great day! 😊
