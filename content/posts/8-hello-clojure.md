@@ -9,7 +9,7 @@ draft = true
 Learning Clojure Syntax
 
 ## Going the functional route
-I've been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certail elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let's go.
+I've been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certain elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let's go.
 
 ## Hello universe
 I will start with a basic clojure program - print 'Hello Universe'.
@@ -37,7 +37,9 @@ This will print "Hello, World!" to the console by default.
 
 Once you have confirmed that your project is set up and running, let me know, and we'll move on to the next step: setting up two pages with navigation.
 
-### I:
+### Basics of Clojure
+
+#### Lein
 Installed lein, saw that it got some java stuff also - like jdk, jre, etc. Hmm. Ok. Anyway, Clojure runs on JVM, right. Ok.
 
 I overlooked the bit about package manager route and tried the script route first. Then I saw I have to get java separately, etc. Then I rolled back and went the package manager route. It was smooth. Typed lein and it works.
@@ -75,7 +77,7 @@ Retrieving org/clojure/spec.alpha/0.2.176/spec.alpha-0.2.176.pom from central
 
  Downloaded the required libraries I guess, and then printed **Hello, World!**
 
-
+#### Hello Universe
 Okay now I'll make it say hello to the Universe.
 
 
@@ -101,7 +103,7 @@ Hmm, okie. Put it back.
 - [& args]: parameters of function, & indicates args is varargs
 - (println "Hello, Universe")
 
-## Editor
+#### Editor
 
 I'm using VSCode.
 
@@ -111,7 +113,7 @@ A quick scan of [Structural Editing](https://clojure.org/guides/structural_editi
 
 It already talks like Emacs is the best editor to do that. I need to pickup emacs for Clojure? Later.
 
-## Clojure Syntax
+### Clojure Syntax
 
 Going through [Clojure Syntax](https://clojure.org/guides/learn/syntax).
 
@@ -133,7 +135,7 @@ special named characters:
 - \space
 - \tab
 
-### Symbols
+#### Symbols
 
 3 symbols that are types:
 - nil: means null, nothing
@@ -148,7 +150,7 @@ other symbols refer to some other thing like function, value, namespace, etc:
 
 Did not get what exactly keywords are. Doc says they act as attribute names - for example as the key in a map. And also as enumerated values. Hmm, let's see.
 
-### Literal collections
+#### Literal collections
 
 - '(1 2 3) ; list
 - [1 2 3]  ; vector
@@ -159,7 +161,7 @@ This section was lovely, cute.
 I still don't know the difference between vector and list, but I'll learn.
 
 
-### Evaluation
+#### Evaluation
 Did not totally grok the difference here.
 Anyway, unlike Java, etc, the Clojure code is first read by a Reader component which outputs Clojure data(expressions?) that the compiler converts to bytecode to be run by JVM. 
 
@@ -179,7 +181,7 @@ Now onto the semantics of this expression:
 
 In clojure everything is an expression, and evaluates to a value. In other languages, we also have statements(that have some other effect) that do not return any value.
 
-### Suspend evaluation
+#### Suspend evaluation
 Use ' to not evaluate some expression:
 - 'x 
 - '(1 2 3)
@@ -187,7 +189,7 @@ Use ' to not evaluate some expression:
 if we try to evaluate (1 2 3) we'll get an error.
 
 
-### REPL, Helpful Standard lib functions
+#### REPL, Helpful Standard lib functions
 
 
 I got Calva extension installed in VScode, which gave me a REPL.
@@ -207,7 +209,7 @@ This is also the gateway to discover more:
 [Cheatsheet](https://clojure.org/api/cheatsheet) categorises the things from standard library and is useful while learning.
 
 
-### def
+#### Note values with def
 To save some value to use later:
 
 - `(def planet "earth")`
@@ -216,7 +218,7 @@ To save some value to use later:
 - this linkage is called var
 
 
-### printing - human form and data form
+#### printing - human form and data form
 When we print stuff in human form, it is easily readable. But cannot be fed back to the Reader in the original form of data.
 
 1. print: human form

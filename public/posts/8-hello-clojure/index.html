@@ -7,7 +7,7 @@
     <title>#8 Hello Clojure | Zuperb</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Summary Learning Clojure Syntax
-Going the functional route I&rsquo;ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certail elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let&rsquo;s go.">
+Going the functional route I&rsquo;ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certain elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let&rsquo;s go.">
     <meta name="generator" content="Hugo 0.128.0">
     
     
@@ -39,7 +39,7 @@ Going the functional route I&rsquo;ve been watching Rich Hickey talking about Cl
   <meta property="og:site_name" content="Zuperb">
   <meta property="og:title" content="#8 Hello Clojure">
   <meta property="og:description" content="Summary Learning Clojure Syntax
-Going the functional route I’ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certail elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let’s go.">
+Going the functional route I’ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certain elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let’s go.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -48,14 +48,14 @@ Going the functional route I’ve been watching Rich Hickey talking about Clojur
 
   <meta itemprop="name" content="#8 Hello Clojure">
   <meta itemprop="description" content="Summary Learning Clojure Syntax
-Going the functional route I’ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certail elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let’s go.">
+Going the functional route I’ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certain elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let’s go.">
   <meta itemprop="datePublished" content="2024-06-29T20:40:37+05:30">
   <meta itemprop="dateModified" content="2024-06-29T20:40:37+05:30">
-  <meta itemprop="wordCount" content="1221">
+  <meta itemprop="wordCount" content="1229">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="#8 Hello Clojure">
   <meta name="twitter:description" content="Summary Learning Clojure Syntax
-Going the functional route I’ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certail elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let’s go.">
+Going the functional route I’ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certain elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let’s go.">
 
 	
   </head>
@@ -131,7 +131,7 @@ Going the functional route I’ve been watching Rich Hickey talking about Clojur
     <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="summary">Summary</h1>
 <p>Learning Clojure Syntax</p>
 <h2 id="going-the-functional-route">Going the functional route</h2>
-<p>I&rsquo;ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certail elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let&rsquo;s go.</p>
+<p>I&rsquo;ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certain elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let&rsquo;s go.</p>
 <h2 id="hello-universe">Hello universe</h2>
 <p>I will start with a basic clojure program - print &lsquo;Hello Universe&rsquo;.
 ChatGPT is helping me with this.</p>
@@ -153,7 +153,8 @@ just one step at a time, moment by moment, be very concise, to the point&rdquo;<
 </ol>
 <p>This will print &ldquo;Hello, World!&rdquo; to the console by default.</p>
 <p>Once you have confirmed that your project is set up and running, let me know, and we&rsquo;ll move on to the next step: setting up two pages with navigation.</p>
-<h3 id="i-1">I:</h3>
+<h3 id="basics-of-clojure">Basics of Clojure</h3>
+<h4 id="lein">Lein</h4>
 <p>Installed lein, saw that it got some java stuff also - like jdk, jre, etc. Hmm. Ok. Anyway, Clojure runs on JVM, right. Ok.</p>
 <p>I overlooked the bit about package manager route and tried the script route first. Then I saw I have to get java separately, etc. Then I rolled back and went the package manager route. It was smooth. Typed lein and it works.</p>
 <ul>
@@ -179,6 +180,7 @@ Then the println function with a param &ldquo;Hello, World&rdquo;</p>
 <pre tabindex="0"><code>Retrieving org/clojure/clojure/1.10.0/clojure-1.10.0.pom from central
 Retrieving org/clojure/spec.alpha/0.2.176/spec.alpha-0.2.176.pom from central
 </code></pre><p>Downloaded the required libraries I guess, and then printed <strong>Hello, World!</strong></p>
+<h4 id="hello-universe-1">Hello Universe</h4>
 <p>Okay now I&rsquo;ll make it say hello to the Universe.</p>
 <pre tabindex="0"><code>(ns zuperb.core
   (:gen-class))
@@ -198,12 +200,12 @@ Retrieving org/clojure/spec.alpha/0.2.176/spec.alpha-0.2.176.pom from central
 <li>[&amp; args]: parameters of function, &amp; indicates args is varargs</li>
 <li>(println &ldquo;Hello, Universe&rdquo;)</li>
 </ul>
-<h2 id="editor">Editor</h2>
+<h4 id="editor">Editor</h4>
 <p>I&rsquo;m using VSCode.</p>
 <p>Suggested <a href="https://clojure.org/guides/editors">Editors</a> does list VSCode, but after Emacs and IntelliJ. I would like to try Emacs, but am comforatble with VSCode at the moment. I see <strong>structural editing</strong> here and there. What&rsquo;s that?</p>
 <p>A quick scan of <a href="https://clojure.org/guides/structural_editing">Structural Editing</a> tells me it is about editing using operations on node/tree level. Clojure code is a tree formed out of nested (&hellip;) or [&hellip;] or {&hellip;}. So it is editing at the level of that structure. I&rsquo;ll check all this later</p>
 <p>It already talks like Emacs is the best editor to do that. I need to pickup emacs for Clojure? Later.</p>
-<h2 id="clojure-syntax">Clojure Syntax</h2>
+<h3 id="clojure-syntax">Clojure Syntax</h3>
 <p>Going through <a href="https://clojure.org/guides/learn/syntax">Clojure Syntax</a>.</p>
 <p>; for comments</p>
 <p>Literals/Primitives in Clojure:</p>
@@ -224,7 +226,7 @@ Retrieving org/clojure/spec.alpha/0.2.176/spec.alpha-0.2.176.pom from central
 <li>\space</li>
 <li>\tab</li>
 </ul>
-<h3 id="symbols">Symbols</h3>
+<h4 id="symbols">Symbols</h4>
 <p>3 symbols that are types:</p>
 <ul>
 <li>nil: means null, nothing</li>
@@ -239,7 +241,7 @@ Retrieving org/clojure/spec.alpha/0.2.176/spec.alpha-0.2.176.pom from central
 <li>:release/alpha ; keyword with namespace</li>
 </ul>
 <p>Did not get what exactly keywords are. Doc says they act as attribute names - for example as the key in a map. And also as enumerated values. Hmm, let&rsquo;s see.</p>
-<h3 id="literal-collections">Literal collections</h3>
+<h4 id="literal-collections">Literal collections</h4>
 <ul>
 <li>&lsquo;(1 2 3) ; list</li>
 <li>[1 2 3]  ; vector</li>
@@ -248,7 +250,7 @@ Retrieving org/clojure/spec.alpha/0.2.176/spec.alpha-0.2.176.pom from central
 </ul>
 <p>This section was lovely, cute.
 I still don&rsquo;t know the difference between vector and list, but I&rsquo;ll learn.</p>
-<h3 id="evaluation">Evaluation</h3>
+<h4 id="evaluation">Evaluation</h4>
 <p>Did not totally grok the difference here.
 Anyway, unlike Java, etc, the Clojure code is first read by a Reader component which outputs Clojure data(expressions?) that the compiler converts to bytecode to be run by JVM.</p>
 <p>The separate Reader - Compiler makes room for Macros. We&rsquo;ll see Macros later.</p>
@@ -263,14 +265,14 @@ Anyway, unlike Java, etc, the Clojure code is first read by a Reader component w
 <li>so this whole thing invokes + function with 3, 4 as arguments</li>
 </ul>
 <p>In clojure everything is an expression, and evaluates to a value. In other languages, we also have statements(that have some other effect) that do not return any value.</p>
-<h3 id="suspend-evaluation">Suspend evaluation</h3>
+<h4 id="suspend-evaluation">Suspend evaluation</h4>
 <p>Use &rsquo; to not evaluate some expression:</p>
 <ul>
 <li>&lsquo;x</li>
 <li>&lsquo;(1 2 3)</li>
 </ul>
 <p>if we try to evaluate (1 2 3) we&rsquo;ll get an error.</p>
-<h3 id="repl-helpful-standard-lib-functions">REPL, Helpful Standard lib functions</h3>
+<h4 id="repl-helpful-standard-lib-functions">REPL, Helpful Standard lib functions</h4>
 <p>I got Calva extension installed in VScode, which gave me a REPL.</p>
 <p>In the REPL if I go:
 <code>(require '[clojure.repl :refer :all])</code></p>
@@ -284,7 +286,7 @@ For example, <code>(doc +)</code> will show help text about &lsquo;+&rsquo;.</p>
 <li>source: definition of the function!</li>
 </ul>
 <p><a href="https://clojure.org/api/cheatsheet">Cheatsheet</a> categorises the things from standard library and is useful while learning.</p>
-<h3 id="def">def</h3>
+<h4 id="note-values-with-def">Note values with def</h4>
 <p>To save some value to use later:</p>
 <ul>
 <li><code>(def planet &quot;earth&quot;)</code></li>
@@ -292,7 +294,7 @@ For example, <code>(doc +)</code> will show help text about &lsquo;+&rsquo;.</p>
 <li><code>(str &quot;we are on &quot; planet) </code></li>
 <li>this linkage is called var</li>
 </ul>
-<h3 id="printing---human-form-and-data-form">printing - human form and data form</h3>
+<h4 id="printing---human-form-and-data-form">printing - human form and data form</h4>
 <p>When we print stuff in human form, it is easily readable. But cannot be fed back to the Reader in the original form of data.</p>
 <ol>
 <li>print: human form</li>
