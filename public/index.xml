@@ -6,8 +6,15 @@
     <description>Recent content on Zuperb</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Jun 2024 06:27:32 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 29 Jun 2024 20:40:37 +0530</lastBuildDate>
     <atom:link href="https://zuperb.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>#8 Hello Clojure</title>
+      <link>https://zuperb.in/posts/8-hello-clojure/</link>
+      <pubDate>Sat, 29 Jun 2024 20:40:37 +0530</pubDate>
+      <guid>https://zuperb.in/posts/8-hello-clojure/</guid>
+      <description>Summary Learning Clojure Syntax&#xA;Going the functional route I&amp;rsquo;ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certain elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let&amp;rsquo;s go.</description>
+    </item>
     <item>
       <title>#7 Let us try Clojure</title>
       <link>https://zuperb.in/posts/7-lets-choose-clojure/</link>
