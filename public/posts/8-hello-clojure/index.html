@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>#8 Hello Clojure | Zuperb</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Summary Learning Clojure Syntax
+Going the functional route I&rsquo;ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certail elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let&rsquo;s go.">
+    <meta name="generator" content="Hugo 0.128.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/8-hello-clojure/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/8-hello-clojure/">
+  <meta property="og:site_name" content="Zuperb">
+  <meta property="og:title" content="#8 Hello Clojure">
+  <meta property="og:description" content="Summary Learning Clojure Syntax
+Going the functional route I’ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certail elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let’s go.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-06-29T20:40:37+05:30">
+    <meta property="article:modified_time" content="2024-06-29T20:40:37+05:30">
+
+  <meta itemprop="name" content="#8 Hello Clojure">
+  <meta itemprop="description" content="Summary Learning Clojure Syntax
+Going the functional route I’ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certail elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let’s go.">
+  <meta itemprop="datePublished" content="2024-06-29T20:40:37+05:30">
+  <meta itemprop="dateModified" content="2024-06-29T20:40:37+05:30">
+  <meta itemprop="wordCount" content="1221">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="#8 Hello Clojure">
+  <meta name="twitter:description" content="Summary Learning Clojure Syntax
+Going the functional route I’ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certail elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let’s go.">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Zuperb
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">#8 Hello Clojure</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2024-06-29T20:40:37+05:30">June 29, 2024</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="summary">Summary</h1>
+<p>Learning Clojure Syntax</p>
+<h2 id="going-the-functional-route">Going the functional route</h2>
+<p>I&rsquo;ve been watching Rich Hickey talking about Clojure ideas, Datomic, etc. after the last post. He is a charismatic speaker, no question about it. But more than his charisma and persuasion, the ideas themselves are impressive. Simple in the real sense, I felt. There is a certail elegance, clarity and sanity in the functional world I feel. Less magic. Okay. Let&rsquo;s go.</p>
+<h2 id="hello-universe">Hello universe</h2>
+<p>I will start with a basic clojure program - print &lsquo;Hello Universe&rsquo;.
+ChatGPT is helping me with this.</p>
+<h3 id="i">I:</h3>
+<p>&ldquo;Guide me on each step to build a site with clojure and datomic
+I&rsquo;ll start with the very basic: hello world
+then two pages with navigation from one to the other
+then a login page: I&rsquo;m the only user - so no sign up, password I set in backend and use while logging in
+then I want to have some protected areas where I can access all data in my website, edit, delete, etc.
+there are also public areas like blog, shared contents: like quotations, journals , etc.
+just one step at a time, moment by moment, be very concise, to the point&rdquo;</p>
+<h3 id="chatgpt">ChatGPT:</h3>
+<p>Step 1: Set Up a Basic Clojure Project</p>
+<ol>
+<li>Install <a href="https://leiningen.org/">Leiningen</a> (a build automation tool for Clojure)</li>
+<li>Create a new Clojure project: <code>lein new app myapp</code></li>
+<li>Navigate to the project directory: <code>cd myapp</code></li>
+<li>Run the application: <code>lein run</code></li>
+</ol>
+<p>This will print &ldquo;Hello, World!&rdquo; to the console by default.</p>
+<p>Once you have confirmed that your project is set up and running, let me know, and we&rsquo;ll move on to the next step: setting up two pages with navigation.</p>
+<h3 id="i-1">I:</h3>
+<p>Installed lein, saw that it got some java stuff also - like jdk, jre, etc. Hmm. Ok. Anyway, Clojure runs on JVM, right. Ok.</p>
+<p>I overlooked the bit about package manager route and tried the script route first. Then I saw I have to get java separately, etc. Then I rolled back and went the package manager route. It was smooth. Typed lein and it works.</p>
+<ul>
+<li><code>lein new</code> created a basic project structure with src/core.clj already containing the hello world code :)</li>
+</ul>
+<pre tabindex="0"><code>(ns zuperb.core
+  (:gen-class))
+
+(defn -main
+  &#34;I don&#39;t do a whole lot ... yet.&#34;
+  [&amp; args]
+  (println &#34;Hello, World!&#34;))
+</code></pre><p>Wah, good ol&rsquo; parenthesis :D<br>
+Hi friend, nice to meet you!</p>
+<p>First lines of clojure code I&rsquo;m laying my hands on.</p>
+<p>ns is for namespace I believe.
+That semi-colon business I don&rsquo;t know, what is gen-class? No idea.</p>
+<p>Next is the main function, with a comment/docstring I think. Also some args thing.
+Then the println function with a param &ldquo;Hello, World&rdquo;</p>
+<ul>
+<li><code>lein run</code> printed out a lot of stuff like</li>
+</ul>
+<pre tabindex="0"><code>Retrieving org/clojure/clojure/1.10.0/clojure-1.10.0.pom from central
+Retrieving org/clojure/spec.alpha/0.2.176/spec.alpha-0.2.176.pom from central
+</code></pre><p>Downloaded the required libraries I guess, and then printed <strong>Hello, World!</strong></p>
+<p>Okay now I&rsquo;ll make it say hello to the Universe.</p>
+<pre tabindex="0"><code>(ns zuperb.core
+  (:gen-class))
+
+(defn -main
+  &#34;I don&#39;t do a whole lot ... yet.&#34;
+  [&amp; args]
+  (println &#34;Hello, Universe!&#34;))
+</code></pre><p>Tried removing the <code>[&amp; args]</code> thing and got this error: <code>Call to clojure.core/defn did not conform to spec.</code></p>
+<p>Hmm, okie. Put it back.</p>
+<ul>
+<li>ns -&gt; namespace: used to group related functions/data</li>
+<li>:gen-class is a directive to generate a Java class for this namespace. What. Used when we want a clojure program to run from commandline.</li>
+<li>(defn function_name &hellip;) this is a function definition</li>
+<li>(defn -main &hellip;)  &lsquo;-&rsquo; indicates this the main entry point for program</li>
+<li>&ldquo;I don&rsquo;t do a whole lot &hellip; yet.&rdquo; -&gt; docstring, documentation string about function</li>
+<li>[&amp; args]: parameters of function, &amp; indicates args is varargs</li>
+<li>(println &ldquo;Hello, Universe&rdquo;)</li>
+</ul>
+<h2 id="editor">Editor</h2>
+<p>I&rsquo;m using VSCode.</p>
+<p>Suggested <a href="https://clojure.org/guides/editors">Editors</a> does list VSCode, but after Emacs and IntelliJ. I would like to try Emacs, but am comforatble with VSCode at the moment. I see <strong>structural editing</strong> here and there. What&rsquo;s that?</p>
+<p>A quick scan of <a href="https://clojure.org/guides/structural_editing">Structural Editing</a> tells me it is about editing using operations on node/tree level. Clojure code is a tree formed out of nested (&hellip;) or [&hellip;] or {&hellip;}. So it is editing at the level of that structure. I&rsquo;ll check all this later</p>
+<p>It already talks like Emacs is the best editor to do that. I need to pickup emacs for Clojure? Later.</p>
+<h2 id="clojure-syntax">Clojure Syntax</h2>
+<p>Going through <a href="https://clojure.org/guides/learn/syntax">Clojure Syntax</a>.</p>
+<p>; for comments</p>
+<p>Literals/Primitives in Clojure:</p>
+<ul>
+<li>42   ; integer</li>
+<li>-1/5 ; floating point</li>
+<li>22/7 ; ratio</li>
+</ul>
+<p>Doc says these are valid Clojure expressions.</p>
+<p>Character types:</p>
+<ul>
+<li>&ldquo;hello&rdquo; ; string</li>
+<li>\e      ; character</li>
+</ul>
+<p>special named characters:</p>
+<ul>
+<li>\newline</li>
+<li>\space</li>
+<li>\tab</li>
+</ul>
+<h3 id="symbols">Symbols</h3>
+<p>3 symbols that are types:</p>
+<ul>
+<li>nil: means null, nothing</li>
+<li>true</li>
+<li>false</li>
+</ul>
+<p>other symbols refer to some other thing like function, value, namespace, etc:</p>
+<ul>
+<li>map</li>
+<li>&lsquo;+&rsquo;</li>
+<li>:alpha ; keyword</li>
+<li>:release/alpha ; keyword with namespace</li>
+</ul>
+<p>Did not get what exactly keywords are. Doc says they act as attribute names - for example as the key in a map. And also as enumerated values. Hmm, let&rsquo;s see.</p>
+<h3 id="literal-collections">Literal collections</h3>
+<ul>
+<li>&lsquo;(1 2 3) ; list</li>
+<li>[1 2 3]  ; vector</li>
+<li>#{1 2 3} ; set</li>
+<li>{:a 1, :b 2} ; map</li>
+</ul>
+<p>This section was lovely, cute.
+I still don&rsquo;t know the difference between vector and list, but I&rsquo;ll learn.</p>
+<h3 id="evaluation">Evaluation</h3>
+<p>Did not totally grok the difference here.
+Anyway, unlike Java, etc, the Clojure code is first read by a Reader component which outputs Clojure data(expressions?) that the compiler converts to bytecode to be run by JVM.</p>
+<p>The separate Reader - Compiler makes room for Macros. We&rsquo;ll see Macros later.</p>
+<p>(+ 3 4)</p>
+<p>Structurally the above is a clojure form - list. It contains a symbol + and two numbers 3 and 4.</p>
+<p>Now onto the semantics of this expression:</p>
+<ul>
+<li>this is a list, and lists are evaluated as invocation</li>
+<li>3 and 4 evaluates to themselves</li>
+<li>The first element + is at the function position - where we find the thing to be invoked. Other than functions, there are macros and some other things that are invokable. We&rsquo;ll see later.</li>
+<li>&lsquo;+&rsquo; evaluates to a function that does addition</li>
+<li>so this whole thing invokes + function with 3, 4 as arguments</li>
+</ul>
+<p>In clojure everything is an expression, and evaluates to a value. In other languages, we also have statements(that have some other effect) that do not return any value.</p>
+<h3 id="suspend-evaluation">Suspend evaluation</h3>
+<p>Use &rsquo; to not evaluate some expression:</p>
+<ul>
+<li>&lsquo;x</li>
+<li>&lsquo;(1 2 3)</li>
+</ul>
+<p>if we try to evaluate (1 2 3) we&rsquo;ll get an error.</p>
+<h3 id="repl-helpful-standard-lib-functions">REPL, Helpful Standard lib functions</h3>
+<p>I got Calva extension installed in VScode, which gave me a REPL.</p>
+<p>In the REPL if I go:
+<code>(require '[clojure.repl :refer :all])</code></p>
+<p>I get a bunch of useful functions like doc.<br>
+For example, <code>(doc +)</code> will show help text about &lsquo;+&rsquo;.</p>
+<p>This is also the gateway to discover more:</p>
+<ul>
+<li>apropos: find any function with matching name/substring</li>
+<li>find-doc: find any function whose doc string matches some name/pattern</li>
+<li>dir: list all fns available in a namespace</li>
+<li>source: definition of the function!</li>
+</ul>
+<p><a href="https://clojure.org/api/cheatsheet">Cheatsheet</a> categorises the things from standard library and is useful while learning.</p>
+<h3 id="def">def</h3>
+<p>To save some value to use later:</p>
+<ul>
+<li><code>(def planet &quot;earth&quot;)</code></li>
+<li>now we have a new symbol planet that evaluates to the value &ldquo;earth&rdquo;</li>
+<li><code>(str &quot;we are on &quot; planet) </code></li>
+<li>this linkage is called var</li>
+</ul>
+<h3 id="printing---human-form-and-data-form">printing - human form and data form</h3>
+<p>When we print stuff in human form, it is easily readable. But cannot be fed back to the Reader in the original form of data.</p>
+<ol>
+<li>print: human form</li>
+<li>println: human form, with new line</li>
+<li>prn: data form</li>
+</ol>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  Zuperb 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
